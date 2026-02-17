@@ -1,0 +1,7 @@
+.ant-tabs-nav::before {
+    border-bottom: none !important;
+}
+
+.ant-tabs-nav {
+    margin-bottom: 0 !important;
+}
