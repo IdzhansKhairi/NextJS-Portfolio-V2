@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Layout, Menu, Tabs } from "antd";
 import {
     UserOutlined,
@@ -18,6 +19,9 @@ import Theme from "@/app/components/Theme";
 const { Header } = Layout;
 
 export default function Navbar() {
+    const pathname = usePathname();
+    const activeKey = pathname.split("/")[1] || "about";
+
     const menuItems = [
         {
             key: "about",
@@ -67,7 +71,7 @@ export default function Navbar() {
 
                 <div className="col-8 d-flex align-items-center justify-content-end">
                     <div className="d-flex pe-3">
-                        <Tabs className="" defaultActiveKey="about" items={menuItems} tabBarGutter={16} />
+                        <Tabs className="" activeKey={activeKey} items={menuItems} tabBarGutter={16} />
                     </div>
                     <div className="d-flex border-start ps-2">
                         <Theme />

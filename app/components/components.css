@@ -5,3 +5,37 @@
 .ant-tabs-nav {
     margin-bottom: 0 !important;
 }
+
+.ant-tabs-tab-active a,
+.ant-tabs-tab-active .anticon {
+    color: #1677ff !important;
+}
+
+.ant-tabs-tab:not(.ant-tabs-tab-active):hover a,
+.ant-tabs-tab:not(.ant-tabs-tab-active):hover .anticon {
+    color: #000000 !important;
+}
+
+.ant-tabs-tab {
+    position: relative;
+}
+
+.ant-tabs-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #1677ff;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.ant-tabs-tab:hover::after {
+    opacity: 1;
+}
+
+.ant-tabs-tab-active::after {
+    opacity: 0 !important;
+}
