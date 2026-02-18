@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Timeline, Card, Tag, Modal, Carousel, Button } from "antd";
 import { CalendarOutlined, TrophyOutlined, EnvironmentOutlined, PictureOutlined } from "@ant-design/icons";
+import "./education.css";
 
 export default function Education() {
 
@@ -145,11 +146,11 @@ export default function Education() {
             >
                 <Carousel arrows autoplay dotPosition="bottom">
                     {activeGallery.map((image, i) => (
-                        <div key={i}>
+                        <div key={i} className="education-gallery-wrapper">
                             <img
                                 src={image}
                                 alt={`Gallery ${i + 1}`}
-                                style={{ width: "100%", height: "400px", objectFit: "cover", borderRadius: "8px" }}
+                                className="education-gallery-img"
                             />
                         </div>
                     ))}
