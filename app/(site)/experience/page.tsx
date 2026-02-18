@@ -7,31 +7,63 @@ export default function Experience() {
 
     const experienceData = [
         {
-            period: "Jun 2024 - Aug 2024",
-            role: "Software Engineer Intern",
-            company: "FusionEx Sdn Bhd",
-            location: "Kuala Lumpur, Malaysia",
-            logo: "/images/fusionex-logo.png",
-            description: "Developed and maintained responsive web applications using React and Node.js. Collaborated with the design team to implement pixel-perfect UI components.",
+            period: "August 2025 - Present",
+            role: "Solution Engineer",
+            company: "Enfrasys Solution Sdn Bhd",
+            location: "Persiaran Tropicana, Selangor, Malaysia",
+            logo: "/images/enfrasys-logo.jpg",
+            description: "Handling AI-related projects primarily utilizing Microsoft Copilot Studio, while independently developing Machine Learning solutions with collaborative input from colleagues.",
             highlights: [
-                "Built a customer dashboard that improved user engagement by 40%",
-                "Implemented automated testing, reducing bugs by 30%",
-                "Participated in Agile sprints and code reviews",
+                "Handled AI-related projects scoped within Microsoft Copilot Studio.",
+                "Worked on Machine Learning projects independently with input from colleagues.",
+                "Explored and evaluated outsource tools and technologies during free time.",
+                "Attended Microsoft AI-102: Azure AI Engineer Associate training by Iverson Sdn Bhd.",
+                "Explored and learned Microsoft products such as Azure Microsoft AI Foundry, Microsoft Fabric, and Power BI.",
             ],
         },
         {
-            period: "Jan 2024 - May 2024",
+            period: "April 2023 - August 2025",
             role: "Part-Time Staff",
-            company: "Camp5 Sdn Bhd",
+            company: "Camp Five Sdn Bhd",
             location: "Kuala Lumpur, Malaysia",
             logo: "/images/camp5-logo.png",
-            description: "Assisted in day-to-day operations and customer service at the climbing facility.",
+            description: "Assisted and guided customers and managed daily front desk operations. Supported team with facility setup and customer management.",
             highlights: [
-                "Managed customer registrations and inquiries",
-                "Maintained safety standards and equipment checks",
+                "Assisted and guided customers and managed daily front desk operations.",
+                "Supported team with facility setup and customer management.",
+                "Joined bouldering/lead climbing competitions (eg: Crank Boulder and Crank Lead competition) as part of the live stream team.",
+                "Built connections with climbing industry stakeholders.",
+                "Aspiring Instructor for Basic Bouldering Course (BBC) and Basic Movement Course (BMC).",
+                "Attended Asian Climbing Summit (ACS) as part of livestream team.",
             ],
         },
-        // Add more experience entries here
+        {
+            period: "July 2023 - January 2024",
+            role: "Internship Trainee",
+            company: "FusionEx Group",
+            location: "Kuala Lumpur, Malaysia",
+            logo: "/images/fusionex.jpg",
+            description: "Collaborated with a development team to deliver UI improvements and assisted in implementing UI changes and feature enhancements.",
+            highlights: [
+                "Collaborated with a development team to deliver UI improvements.",
+                "Worked on bug identification and resolution.",
+                "Assisted in implementing UI changes and feature enhancements.",
+                "Utilized Trello to enhance task coordination and collaboration.",
+                "Gained exposure to agile development practices and issue tracking.",
+            ],
+        },
+        {
+            period: "July 2022 - December 2022",
+            role: "Security Personnel",
+            company: "Admiral Secure Guard Sdn Bhd",
+            location: "Ampang, Selangor, Malaysia",
+            logo: "/images/admiral-logo.jpg",
+            description: "Handled high-pressure situations and managed visitor access while maintaining alertness during emergencies and ensuring protocol compliance.",
+            highlights: [
+                "Handled high-pressure situations and managed visitor access.",
+                "Maintained alertness during emergencies and ensured protocol compliance.",
+            ],
+        },
     ];
 
     return (
@@ -58,7 +90,7 @@ export default function Experience() {
                                         <div className="flex-grow-1">
                                             <h5 className="fw-bold mb-1">{item.role}</h5>
                                             <p className="text-primary mb-1">{item.company}</p>
-                                            <div className="d-flex align-items-center gap-3 text-secondary mb-2" style={{ fontSize: "0.85rem" }}>
+                                            <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-1 gap-sm-3 text-secondary mb-2" style={{ fontSize: "0.85rem" }}>
                                                 <div className="d-flex align-items-center">
                                                     <EnvironmentOutlined className="me-1" />
                                                     <span>{item.location}</span>

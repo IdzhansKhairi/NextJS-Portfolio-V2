@@ -1,0 +1,173 @@
+/* Interests Page Custom Styles */
+
+.interests-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Interest Cards */
+.interest-card {
+    border-radius: 14px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    padding: 28px 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.interest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.interest-card.active {
+    border-color: var(--bs-primary);
+    box-shadow: 0 4px 16px rgba(22, 119, 255, 0.15);
+}
+
+.interest-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.interest-card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.interest-card-desc {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Gallery Section */
+.gallery-section {
+    margin-top: 32px;
+}
+
+.gallery-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-section-header i {
+    font-size: 1.3rem;
+    color: var(--bs-primary);
+}
+
+.gallery-section-header span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+/* Ant Design Image override for grid fit */
+.gallery-item .ant-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* YouTube embed fit */
+.gallery-youtube {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Instagram embed fit */
+.gallery-instagram {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Video wrapper */
+.gallery-video-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.gallery-video-overlay i {
+    font-size: 2.5rem;
+}
+
+.gallery-video-wrapper:hover .gallery-video-overlay {
+    opacity: 1;
+}
+
+/* No gallery placeholder */
+.gallery-placeholder {
+    text-align: center;
+    padding: 48px 24px;
+    border-radius: 12px;
+    border: 2px dashed #e8e8e8;
+    color: #aaa;
+}
+
+.gallery-placeholder i {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

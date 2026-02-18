@@ -1,22 +1,17 @@
 "use client";
-import { useState } from "react";
-import { ConfigProvider, theme, Button } from "antd";
-import { SunOutlined, MoonOutlined } from "@ant-design/icons";
 
-export default function ThemeProvider() {
-    const [isDark, setIsDark] = useState(false);
+import { Button } from "antd";
+import { SunOutlined, MoonOutlined } from "@ant-design/icons";
+import { useTheme } from "./ThemeProvider";
+
+export default function ThemeToggle() {
+    const { isDark, toggleTheme } = useTheme();
 
     return (
-        <ConfigProvider
-            theme={{
-                algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
-            }}
-        >
-            <Button
-                type="text"
-                icon={isDark ? <MoonOutlined /> : <SunOutlined />}
-                onClick={() => setIsDark(!isDark)}
-            />
-        </ConfigProvider>
+        <Button
+            type="text"
+            icon={isDark ? <MoonOutlined /> : <SunOutlined />}
+            onClick={toggleTheme}
+        />
     );
 }

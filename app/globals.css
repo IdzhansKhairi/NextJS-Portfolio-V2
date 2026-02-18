@@ -2,4 +2,179 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Prevent card content overflow on mobile */
+.ant-card-body {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Allow tags to wrap text on small screens */
+.ant-tag {
+  white-space: normal !important;
+  max-width: 100%;
+}
+
+/* Timeline cards - prevent horizontal overflow */
+.ant-timeline-item-content {
+  overflow: hidden;
+}
+
+/* ========================================
+   DARK MODE OVERRIDES
+   ======================================== */
+body.dark-mode {
+  background-color: #141414;
+  color: #e8e8e8;
+}
+
+/* Text colors */
+body.dark-mode .text-dark {
+  color: #e8e8e8 !important;
+}
+
+body.dark-mode .text-secondary {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode .fw-bold {
+  color: #e8e8e8;
+}
+
+/* Borders */
+body.dark-mode .border-bottom,
+body.dark-mode .border-top,
+body.dark-mode .border-start {
+  border-color: #303030 !important;
+}
+
+/* Header & Footer */
+body.dark-mode .header-wrapper {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .footer-wrapper {
+  background-color: #141414;
+}
+
+/* Cards */
+body.dark-mode .ant-card {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+}
+
+body.dark-mode .ant-card:hover {
+  border-color: #444 !important;
+}
+
+/* Drawer */
+body.dark-mode .ant-drawer-content {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .ant-drawer-header {
+  background-color: #1a1a1a !important;
+  border-color: #303030 !important;
+}
+
+body.dark-mode .mobile-nav-item {
+  color: #a0a0a0;
+}
+
+body.dark-mode .mobile-nav-item:hover {
+  background-color: #2a2a2a;
+  color: #e8e8e8;
+}
+
+body.dark-mode .mobile-nav-item.active {
+  background-color: #111a2c;
+  color: #1677ff;
+}
+
+/* Mobile menu button */
+body.dark-mode .mobile-menu-btn {
+  border-color: #303030;
+  color: #e8e8e8;
+}
+
+body.dark-mode .mobile-menu-btn:hover {
+  background-color: #2a2a2a;
+}
+
+/* Skill items */
+body.dark-mode .skill-item {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+}
+
+/* Interest cards */
+body.dark-mode .interest-card {
+  background-color: #1f1f1f;
+  border-color: #303030;
+}
+
+body.dark-mode .interest-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .interest-card.active {
+  border-color: #1677ff;
+  box-shadow: 0 4px 16px rgba(22, 119, 255, 0.25);
+}
+
+/* Cert items */
+body.dark-mode .cert-item {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+}
+
+/* Category group borders */
+body.dark-mode .skill-category-group {
+  border-color: #303030;
+}
+
+/* Gallery placeholder */
+body.dark-mode .gallery-placeholder {
+  border-color: #303030;
+  color: #666;
+}
+
+/* About page profile */
+body.dark-mode .about-profile-wrapper {
+  background: transparent !important;
+}
+
+/* Tabs in dark mode */
+body.dark-mode .ant-tabs-tab a,
+body.dark-mode .ant-tabs-tab .anticon {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode .ant-tabs-tab:not(.ant-tabs-tab-active):hover a,
+body.dark-mode .ant-tabs-tab:not(.ant-tabs-tab-active):hover .anticon {
+  color: #e8e8e8 !important;
+}
+
+body.dark-mode .ant-tabs-tab-active a,
+body.dark-mode .ant-tabs-tab-active .anticon {
+  color: #1677ff !important;
+}
+
+/* Project cards */
+body.dark-mode .project-card {
+  background-color: #1f1f1f !important;
+  border-color: #303030 !important;
+}
+
+/* Timeline */
+body.dark-mode .ant-timeline-item-tail {
+  border-color: #303030 !important;
+}
+
+/* Site wrapper */
+body.dark-mode .site-wrapper {
+  background-color: #141414;
 }

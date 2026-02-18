@@ -25,7 +25,15 @@ export default function Education() {
             logo: "/images/um-logo.png",
             description: "Specialised in AI-related fields including computer vision, NLP, fuzzy logic, and machine learning. Led 5 group projects across different subjects as project manager, honing leadership and coordination skills. Actively involved in event management and clubs. Gained industry experience through internships at FusionEx and Camp5.",
             achievements: ["CGPA: 3.61", "FYP: Exploring LLM for Malay Text Normalization", "Director of UMGB Creative Arts Club"],
-            gallery: [],
+            gallery: [
+                "/gallery/degree-days/degree-1.jpg",
+                "/gallery/degree-days/degree-2.jpg",
+                "/gallery/degree-days/degree-3.jpg",
+                "/gallery/degree-days/degree-4.jpg",
+                "/gallery/degree-days/degree-5.jpg",
+                "/gallery/degree-days/degree-6.jpg",
+                "/gallery/degree-days/degree-7.jpg",
+            ],
         },
         {
             year: "2020 - 2021",
@@ -86,7 +94,7 @@ export default function Education() {
                                         <div className="flex-grow-1">
                                             <h5 className="fw-bold mb-1">{item.degree}</h5>
                                             <p className="text-primary mb-1">{item.school}</p>
-                                            <div className="d-flex align-items-center gap-3 text-secondary mb-2" style={{ fontSize: "0.85rem" }}>
+                                            <div className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-1 gap-sm-3 text-secondary mb-2" style={{ fontSize: "0.85rem" }}>
                                                 <div className="d-flex align-items-center">
                                                     <EnvironmentOutlined className="me-1" />
                                                     <span>{item.location}</span>
