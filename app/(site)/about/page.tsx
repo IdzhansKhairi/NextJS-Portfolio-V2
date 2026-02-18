@@ -25,7 +25,7 @@ export default function About() {
                     </h4>
 
                     {/* Bio */}
-                    <p className="about-bio text-secondary mb-4">
+                    <p className="about-bio text-secondary mb-4 mx-auto mx-lg-0">
                         I&apos;m a Solution Engineer at Enfrasys Solution Sdn Bhd with a
                         passion for AI and Machine Learning. I enjoy building intelligent
                         solutions using Microsoft technologies like Copilot Studio, Azure AI
@@ -33,14 +33,15 @@ export default function About() {
                         elegant solutions.
                     </p>
 
+
                     {/* Location */}
-                    <div className="about-location d-flex align-items-center text-secondary mb-4">
+                    <div className="about-location d-flex align-items-center justify-content-center justify-content-lg-start text-secondary mb-4">
                         <EnvironmentOutlined className="me-2" />
                         <span>Selangor, Malaysia</span>
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="d-flex flex-wrap gap-3">
+                    <div className="d-flex flex-column flex-lg-row gap-3 w-100">
                         <Button type="primary" icon={<MailOutlined />} size="large" href="mailto:idzhans.khairi@gmail.com" className="about-btn-email text-decoration-none">
                             Email Me
                         </Button>
